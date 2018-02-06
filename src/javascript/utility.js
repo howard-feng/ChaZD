@@ -1,12 +1,14 @@
 var api = {
-    key: 1116151381,
-    keyfrom : "youdaocidian"
+    appKey:"6fc318a46966123a",
+    appSecret:"UkQbyuKSFdCnFM90LoMnGy4Koj7VrbwH",
+    salt: "2",
 };
 
 var urls = {
-    dict : "http://fanyi.youdao.com/openapi.do?keyfrom=" + api.keyfrom +"&key="+ api.key +"&type=data&doctype=json&version=1.1&q=",
+    
+    dict : "http://openapi.youdao.com/api?from=auto&to=zh-CHS&appKey=" + api.appKey +"&salt="+ api.salt +"&sign=",
     voice : "http://dict.youdao.com/dictvoice?audio=",
-    dictHttps : "https://fanyi.youdao.com/openapi.do?keyfrom=" + api.keyfrom +"&key="+ api.key +"&type=data&doctype=json&version=1.1&q=",
+    dictHttps : "https://openapi.youdao.com/api?from=auto&to=zh-CHS&appKey=" + api.appKey +"&salt="+ api.salt +"&sign=",
     voiceHttps : "https://dict.youdao.com/dictvoice?audio=",
 };
 

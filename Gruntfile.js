@@ -31,9 +31,11 @@ module.exports = function(grunt) {
         jshint: {
             all: {
                 src: ["src/**/*.js", "Gruntfile.js"],
-
                 options: {
-                    jshintrc: true
+                    camelcase: false,
+                    jshintrc: true,
+                    reporterOutput:"",
+
                 }
             }
         },

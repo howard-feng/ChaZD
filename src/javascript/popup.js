@@ -379,7 +379,7 @@ toggleKey.onchange = function (event) {
 // })
 
 //在popup页内 Enter键 查询选中部分
-document.addEventListener('keyup',function(e){
+document.addEventListener("keyup",function(e){
     if(document.activeElement.tagName=="BODY" && e.which==13){
         queryInPopup(window.getSelection().toString());
     }

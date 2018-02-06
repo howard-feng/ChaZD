@@ -227,8 +227,10 @@
             source: "select",
             useHttps: useHttps
         }, function(response) {
+            // console.log("sender is " + JSON.stringify(response));
             var resultObj = response;
             $searchingNode.innerHTML = "";
+            // alert("sender is " + JSON.stringify(response));
             if (resultObj.validMessage === "query success") {
 
                 $resultContainer.innerHTML = resultObj.titleBlock;
